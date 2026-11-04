@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Payment Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<h1>Payment Receipt</h1>
+<p>Student: <span th:text="${studentName}">Name</span></p>
+<p>Amount Paid: <span th:text="${amount}">0.00</span></p>
+<p>Reference: <span th:text="${reference}">REF</span></p>
+<p>Date: <span th:text="${paymentDate}">Date</span></p>
+</body>
+</html>
